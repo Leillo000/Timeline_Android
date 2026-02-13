@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --background_color: #ffffff00;
+    --text_color: #000000;
+    --secundary_text_color: #044216;
+    --paragraph_color: #000000;
+    --background_elements: #077412;
+    --font: "DM Sans";
+    --Secundary_font: "Funnel Sans";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background_color);
+}
+
+/* Estilos barra de navegación */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+#blur_effect {
+    position: absolute;
+    /* Se sobrepone sobre otra capa*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* opcional para dar brillo */
+    z-index: 0;
+    /* Es el orden de la capa, aqui es la capa mas baja 
+                   o la que esta mas abajo */
+}
+
+nav svg {
+    stroke: var(--text_color);
+    fill: #00000000;
+    border-radius: 20px;
+}
+
+nav button {
+    z-index: 1;
+}
+
+#navbar {
+
+    /* Para que la barra se quede quieta*/
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+#navbar #left,
+#navbar #right {
+    background-color: var(--background_color);
+    border: none;
+    border-radius: 20px;
+}
+
+#navbar #left:hover,
+#navbar #right:hover,
+svg:hover {
+    background-color: var(--background_elements);
+    stroke: white;
+}
+
+/* Estilos de carrusel */
+
+.carousel .group .card button a {
+    color: var(--text_color);
+    font-size: 10px;
+    font-family: var(--font), sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+.carousel .group .card button a:hover {
+    color: white;
+}
+
+.url {
+    border: none;
+    border-radius: 30px;
+    background-color: var(--background_color);
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.url:hover {
+    background-color: var(--background_elements);
+}
+
+
+.carousel {
+    flex-basis: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    overflow-x: auto;
+    height: 20px;
+    z-index: 1;
+}
+
+/* Es para que no se muestre la scrollbar del carrusel */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    /* Flex es una abreviatura de las siguientes propiedades: <flex-grow> <flex-shrink> <flex-basis>; 
+    flex-basis es el tamaño de base que va a tener este elemento, ni más ni menos, es decir, no va a cambiar aunque falte espacio o sobre */
+    flex: 0 0 5em;
+    height: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-right: 5px;
+    transition: 0.4s ease-in;
+    z-index: 1;
+}
+
+/* Estilos contenido */
+
+section h2 {
+    font-family: var(--font), sans-serif;
+    color: var(--secundary_text_color);
+}
+
+section h5 {
+    font-family: var(--font), sans-serif;
+    color: var(--secundary_text_color);
+}
+
+section p {
+    font-family: var(--font), sans-serif;
+    color: var(--paragraph_color);
+    font-size: 10px;
+    line-height: -1;
+}
+
+section img {
+    height: 200px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+
+section li {
+    font-family: var(--font), sans-serif;
+    color: var(--paragraph_color);
+    font-size: 10px;
+    list-style: decimal;
+}
+
+
+section div{
+    margin-right: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section a {
+    color: white;
+    font-size: 10px;
+    font-family: var(--font), sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+.button_section{
+    border: none;
+    border-radius: 30px;
+    background-color: var(--background_elements);
+    width: 40%;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    margin: min(20%, 50px);
+}

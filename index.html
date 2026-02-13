@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/android_icon.png">
+    <script type="text/javascript" src="app.js" defer></script>
+    <title>Timeline Android</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="blur_effect"></div>
+        <button onclick=moveLeft() id="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 6l-6 6l6 6" />
+            </svg>
+        </button>
+        <div class="carousel" id="carousel">
+            <div class="group" id="group">
+                <div class="card"><button class="url"><a href="#2009">2009</a></button></div>
+                <div class="card"><button class="url"><a href="#2011">2011</a></button></div>
+                <div class="card"><button class="url"><a href="#2012">2012</a></button></div>
+                <div class="card"><button class="url"><a href="#2013">2013</a></button></div>
+                <div class="card"><button class="url"><a href="#2014">2014</a></button></div>
+                <div class="card"><button class="url"><a href="#2015">2015</a></button></div>
+                <div class="card"><button class="url"><a href="#2016">2016</a></button></div>
+                <div class="card"><button class="url"><a href="#2017">2017</a></button></div>
+            </div>
+        </div>
+        <button onclick=moveRight() id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right" id="rightArrow">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 6l6 6l-6 6" />
+            </svg>
+        </button>
+    </nav>
+    <section id="2009" class="date">
+        <div class="text">
+            <h2>2009</h2>
+            <h5>26 de octubre</h5>
+            <br>
+            <p>Su predecesor fue Android 1.6 Donut y su sucesor fue Android 2.1 Eclair.</p>
+            <br><br>
+            <div class="button_section"><a href="https://evolucionando-android.fandom.com/es/wiki/2.0/2.1_Eclair">Ver más </a></div>
+            
+        </div>
+        <div>
+            <img src="images/eclair.png" alt="Eclair">
+        </div>
+    </section>
+
+</body>
+
+</html>
