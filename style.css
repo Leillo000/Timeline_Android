@@ -163,8 +163,8 @@ section p {
     line-height: -1;
 }
 
-section img {
-    height: 200px;
+section div img {
+    height: 130px;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
@@ -180,13 +180,14 @@ section li {
 
 section div{
     margin-right: 30px;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 section {
     display: flex;
     justify-content: center;
-    height: 62vh;
+    height: 70vh;
+    scroll-margin-top: 70px;
 }
 
 section a {
