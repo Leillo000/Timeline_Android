@@ -1,7 +1,7 @@
 const group = document.getElementById("group");
 
 /* La cantidad de pixeles que se va a mover */
-const movement = 50;
+const movement = 400;
 const ini_position = window.getComputedStyle(group);
 let currentMargin = parseInt(ini_position.marginLeft);
 
