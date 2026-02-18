@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --background_color: #ffffff00;
+    --text_color: #000000;
+    --secundary_text_color: #ffffff;
+    --paragraph_color: #000000;
+    --background_elements: #000000;
+    --font: "DM Sans";
+    --Secundary_font: "Funnel Sans";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos de Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.navbar ul{ 
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li{
+    font-family: var(--font), sans-serif;
+}
+
+.navbar ul li img{
+ height: 20px;
+}
+
+/* Estilos del versus */
+
+#versus{
+display: flex;
+justify-content: center;
+gap: 60px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+#versus #apple img,
+#versus #android img{
+    height: 175px;
+}
+
+
+/* Estilos del card que se voltea */
+
+.card {
+    position: relative;
+    perspective: 1000px;
+    width: 300px;
+    height: 190px;
+    margin: 0;
+    margin-top: 20px;
+    flex: 0 0 320px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card header { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; 
+    margin-bottom: 26px;
+}
+
+.card .front, .card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    background: var(--background_color);
+    border-radius: 16px;
+    padding: 44px 40px;
+    transition: 0.6s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card .front {
+    align-items: center;
+}
+
+.card .back {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+input {
+    position: absolute;
+    scale: 0;
+}
+
+input:checked
+~ .card .back {
+    transform: rotateY(0);
+}
+
+input:checked
+~ .card .front {
+    transform: rotateY(-180deg);
+}
+
+.card var  {
+    font-style: normal; 
+    font-size: 80px; 
+    line-height: 1;
+}
+
+.card div a{
+    font-family: var(--font), sans-serif;
+    color: var(--secundary_text_color);
+    text-decoration: none;
+    user-select: none;
+}
+
+.button_section{
+    border: none;
+    border-radius: 30px;
+    background-color: var(--background_elements);
+    width: 40%;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos adicionales */
+
+h1{
+    font-family: var(--font), sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family: var(--font), sans-serif;
+}
+
+span{
+    font-family: var(--font), sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+#tittle{
+    margin-top: 80px;
+}
