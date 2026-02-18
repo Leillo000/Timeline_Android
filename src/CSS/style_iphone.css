@@ -214,3 +214,21 @@ section a {
 .date {
     margin: min(20%, 50px);
 }
+
+#back{
+     border: none;
+    border-radius: 30px;
+    background-color: var(--background_elements);
+    width: 40px;
+    height: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volver{
+    height: 5vh;
+}

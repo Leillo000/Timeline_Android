@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style_iphone.css">
     <link rel="icon" type="image/png" href="../images/iphone_icon.png">
-    <script type="text/javascript" src="../JS/app.js" defer></script>
+    <script type="text/javascript" src="../JS/app_iphone.js" defer></script>
     <title>Timeline iPhone</title>
 </head>
 
 <body>
     <nav id="navbar">
         <div id="blur_effect"></div>
+        <button onclick=moveLeft() id="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 6l-6 6l6 6" />
+            </svg>
+        </button>
         <div class="carousel" id="carousel">
             <div class="group" id="group">
                 <div class="card"><button class="url"><a href="#15">iOS 15</a></button></div>
@@ -22,6 +30,14 @@
                 <div class="card"><button class="url"><a href="#26">iOS 26</a></button></div>
             </div>
         </div>
+        <button onclick=moveRight() id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right" id="rightArrow">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 6l6 6l-6 6" />
+            </svg>
+        </button>
     </nav>
 
     <!-- Section iOS 15 -->
@@ -122,14 +138,19 @@
             <p>Un nuevo aire. Cargado de magia. Así presenta Apple su iOS 26, la versión más reciente de su sistema
                 operativo para iPhone y una de las actualizaciones más importantes en los últimos años. Primero, porque
                 cambia la numeración. De iOS 18 saltamos directamente a iOS 26.</p>
-            <div class="button_section"><a
-                    href="https://hipertextual.com/guias/ios-26/">Ver
+            <div class="button_section"><a href="https://hipertextual.com/guias/ios-26/">Ver
                     más </a>
             </div>
 
         </div>
         <div>
             <img src="../images/iphone17.png" alt="Eclair">
+        </div>
+    </section>
+    <section id="volver" class="date">
+        <div id="back">
+            <a href="../HTML/index.html">Volver
+            </a>
         </div>
     </section>
 
