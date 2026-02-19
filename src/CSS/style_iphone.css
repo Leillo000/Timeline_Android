@@ -162,6 +162,7 @@ section p {
     color: var(--paragraph_color);
     font-size: 10px;
     line-height: -1;
+    text-align: justify;
 }
 
 section div img {
