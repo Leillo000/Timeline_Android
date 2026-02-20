@@ -233,3 +233,17 @@ section a {
 #volver{
     height: 5vh;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #b5b5b5;
+    height: 100px;
+}
+
+footer span {
+    font-family: var(--font), sans-serif;
+    color: #5a5a5a;
+    font-size: 10px;
+}
