@@ -187,7 +187,7 @@ section div{
 section {
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 100%;
     scroll-margin-top: 70px;
 }
 
